@@ -6,7 +6,7 @@ namespace MVC_EFCORE.Models
     {
         public Livro() =>
             DataEntrada = DateTime.Now;
-        public Livro(int iD, int categoriaID, string titulo, string autor, int quantidade, decimal preco, Categoria categoria) : this()
+        public Livro(int iD, int categoriaID, string titulo, string autor, int quantidade, decimal preco) : this()
         {
             ID = iD;
             CategoriaID = categoriaID;
@@ -14,10 +14,9 @@ namespace MVC_EFCORE.Models
             Autor = autor;
             Quantidade = quantidade;
             Preco = preco;
-            Categoria = categoria;
         }
 
-        public Livro(int iD, int categoriaID, string titulo, string autor, int quantidade, decimal preco, DateTime dataEntrada, Categoria categoria)
+        public Livro( int iD, int categoriaID, string titulo, string autor, int quantidade, decimal preco, DateTime dataEntrada, Categoria categoria)
         {
             ID = iD;
             CategoriaID = categoriaID;
